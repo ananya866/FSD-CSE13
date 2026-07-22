@@ -25,6 +25,11 @@ const toWords = (digit) => {
       return "Invalid Number";
   }
 };
+const towords2 =(digit)=>{
+    const words = ["Zero", "One", "Two", "Three", "Four", "Five",
+        "Six", "Seven", "Eight", "Nine"]
+    
+}
 
 //console.log(toWords(5));
 //console.log(toWords(3));
