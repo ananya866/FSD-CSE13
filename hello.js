@@ -6,9 +6,9 @@ const sayHi = (name) => {
 };
 
 function sum(a, b) {
-  return a + b;
+  return 
 }
-sayHi("Janvi Tanwar");
+sayHi("Aaniya");
 sayHello("Angel Kapasia");
 
 console.log(`sum of 2 and 5 is ${sum(2, 5)}`);
