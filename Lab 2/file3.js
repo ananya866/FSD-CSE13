@@ -9,7 +9,7 @@ const readData = async (fname) => {
   console.log(data);
 };
 const appendData = async (fname, content) => {
-  await appendFile(fname, "\n" + content);
+  await appendFile(fname, "\n"+ content);
 };
 await writeData("happy.txt", "I am very happy");
 await readData("happy.txt");
