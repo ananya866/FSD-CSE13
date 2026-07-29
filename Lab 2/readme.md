@@ -15,6 +15,7 @@ Reading and Writing File
 - appendfile()
 - Directory Management
 - mkdir()
+- rmdir() - depri
 - rmdir()
 - readdir()
 - metdata/Information
