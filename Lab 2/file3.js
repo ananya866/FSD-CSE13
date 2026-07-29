@@ -1,18 +1,17 @@
-const writeName = (fnmae,constent) =>{
-
-}
-const writeData = (fname,constents) =>{
-    await writerFile(fname,contents);
-    console.log('file written');
-
+import { readFile, writeFile, appendFile } from "fs/promises";
+const writeData = async (fname, content) => {
+  await writeFile(fname, content);
+  console.log("File written");
 };
-const readData = (fname) =>{
-    const data = await readFile(fname,'utf-8')
-    console.log('File content');
-    console.log(data);
-
+const readData = async (fname) => {
+  const data = await readFile(fname, "utf-8");
+  console.log("File contents");
+  console.log(data);
 };
-await writeData("happy.txt","I am very happy");
+const appendData = async (fname, content) => {
+  await appendFile(fname, "\n" + content);
+};
+await writeData("happy.txt", "I am very happy");
 await readData("happy.txt");
-await appendData("happy.txt", "FSD is inteeresting");
-await readData("happy.txt",);
+await appendData("happy.txt", "FSD is interesting");
+await readData("happy.txt");
